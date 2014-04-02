@@ -1,0 +1,78 @@
+@import '../../bower_components/bootstrap/less/bootstrap';
+
+header-bar, [header-bar], .header-bar{
+  .navbar;
+  .navbar-default;
+
+  @app-title-height: @navbar-height - @navbar-padding-vertical;
+
+  .navbar-header {
+
+    .navbar-brand {
+      padding: 0;
+
+      .back {
+        .btn;
+        .btn-default;
+        .navbar-btn;
+
+        i {
+          .glyphicon;
+          .glyphicon-step-backward;
+        }
+      }
+
+      .title {
+        h1 {
+          margin: @navbar-padding-vertical/2 @navbar-padding-horizontal;
+          text-align: left;
+          float: right;
+          font-weight: normal;
+          text-transform: uppercase;
+          font-size: @app-title-height/2 - 1;
+          height: @app-title-height;
+          white-space: nowrap;
+        }
+
+        sup {
+          color: @brand-primary;
+        }
+      }
+    }
+  }
+
+  .navbar-toggle {
+    z-index: 100;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: @app-title-height;
+    margin: @navbar-padding-vertical/2 0;
+  }
+
+  @media (max-width: @screen-xs-max) {
+    .navbar-header {
+
+      .navbar-toggle {
+        max-width: 20%;
+      }
+
+      .logo {
+        display: none;
+      }
+
+      .navbar-brand {
+        max-width: 70%;
+        max-height: @navbar-height;
+        overflow: hidden;
+
+        .title {
+          overflow: show;
+        }
+      }
+    }
+  }
+}
