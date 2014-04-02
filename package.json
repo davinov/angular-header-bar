@@ -1,8 +1,8 @@
 {
   "name": "my-way.angular-header-bar",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Header bar for stylish mobile-first apps",
-  "main": "dist/mv.angular-header-bar.js",
+  "main": "dist/mw.angular-header-bar-tpls.js",
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.6.0",
