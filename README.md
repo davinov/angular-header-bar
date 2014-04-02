@@ -1,8 +1,11 @@
 # angular-header-bar
 Header bar for stylish mobile-first apps
 
+## Installation
+`bower install my-way.angular-header-bar`
+
 ## Usage
-Include `mw.angular-header-bar-tpls.js` and require `mw.angular-header-bar` in your angular app.
+Include `mw.angular-header-bar-tpls.js` and `angular-header-bar.css`, then require `mw.angular-header-bar` in your angular app.
 This directive can be used as class, attribute or element.
 
 ```html
@@ -12,6 +15,9 @@ This directive can be used as class, attribute or element.
 ````
 
 > The last one which is not IE8 compatible
+
+### Usage with less
+Import `dist/less/angular-header-bar.less` in your less main file.
 
 ## Options
 Option  | Type  | Description
