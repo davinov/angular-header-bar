@@ -28,6 +28,7 @@ beta    | bool  | show or hide beta mention
 back    | bool  | show or hide back button
 homePage| string| path to the home page (used for links and not displaying the back button)
 logo    | string| path to an image to be displayed as logo
+fluid   | bool  | adapts fluidly to screen's width ([.container-fluid](http://getbootstrap.com/css/#grid-example-fluid) instead of .container)
 
 # Example
 See docs/angular-header-bar.html (require `bower install`)
