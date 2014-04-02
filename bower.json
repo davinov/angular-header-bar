@@ -1,0 +1,29 @@
+{
+  "name": "mv.angular-header-bar",
+  "version": "0.1.0",
+  "homepage": "https://github.com/my-way/angular-header-bar",
+  "authors": [
+    "David Nowinsky <david@nowinsky.net>"
+  ],
+  "description": "Header bar for stylish mobile-first apps",
+  "main": "dist/mv.angular-header-bar.js",
+  "keywords": [
+    "my-way",
+    "angular",
+    "header",
+    "header-bar",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.15",
+    "bootstrap": "~3.1.1"
+  }
+}
