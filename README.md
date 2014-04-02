@@ -2,6 +2,7 @@
 Header bar for stylish mobile-first apps
 
 ## Usage
+Include `mw.angular-header-bar-tpls.js` and require `mw.angular-header-bar` in your angular app.
 This directive can be used as class, attribute or element.
 
 ```html
@@ -23,4 +24,7 @@ homePage| string| path to the home page (used for links and not displaying the b
 logo    | string| path to an image to be displayed as logo
 
 # Example
-See docs/angular-header-bar.html
+See docs/angular-header-bar.html (require `bower install`)
+
+# Build the package
+`npm install` and `npm run build`

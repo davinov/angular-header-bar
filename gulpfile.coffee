@@ -22,6 +22,7 @@ ASSETS_PATH = 'assets/'
 
 # Files
 APP_MAIN_FILE    = 'mw.angular-header-bar.js'
+APP_AND_TEMPLATES_MAIN_FILE    = 'mw.angular-header-bar-tpls.js'
 CSS_MAIN_FILE    = 'mw.angular-header-bar.css'
 MINIFIED_FILE    = 'mw.angular-header-bar.min.js'
 LESS_MAIN_FILE   = SRC_PATH + 'less/angular-header-bar.less'
@@ -73,7 +74,14 @@ gulp.task 'assets', ->
   .pipe gulp.dest DIST_PATH
 
 gulp.task 'compile', (done) ->
-  runSequence 'assets', 'vendors', 'coffee', 'templates', 'less', done
+  runSequence 'assets', 'vendors', 'coffee', 'templates', 'less', 'concat', done
+
+gulp.task 'concat', (done) ->
+  gulp.src DIST_PATH+'/*.js'
+  .pipe concat APP_AND_TEMPLATES_MAIN_FILE
+  .pipe filesize()
+  .pipe gulp.dest DIST_PATH
+  .on 'error', gutil.log
 
 gulp.task 'minify', ->
   gulp.src DIST_PATH+'/**/*.js'
