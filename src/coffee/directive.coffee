@@ -1,6 +1,6 @@
 angular.module 'mw.angular-header-bar'
 .directive 'headerBar', ->
-  restrict: 'EA'
+  restrict: 'EAC'
   controller: 'headerController'
   templateUrl: 'jade/view.html'
   transclude: true
