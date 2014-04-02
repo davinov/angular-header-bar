@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+<head>
+    <title>MyWay - Angular header bar</title>
+    <meta name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <link rel='stylesheet' href='../bower_components/bootstrap/dist/css/bootstrap.css'>
+    <link rel='stylesheet' href='../dist/angular-header-bar.css'>
+</head>
+<body>
+
+    <div class='container'>
+        <h1 class='page-header'>
+            Angular-header-bar
+            <small>&nbsp;directive</small>
+        </h1>
+
+        <p>Provide a responsive header bar with app name on 2 lines with an optional logo and a back button. Stylable with Twitter Bootstrap variables.</p>
+    </div>
+
+    <div header-bar title1='"Application"' title2='"Title"' beta='true' back='true' logo='"logo.png"'>
+        <li>
+            <a href='#'>Item 1</a>
+        </li>
+        <li>
+            <a href='#'>Item 2</a>
+        </li>
+    </div>
+
+    <div class='container'>
+        <pre>
+            <code>
+&lt;div header-bar title1='&quot;Application&quot;' title2='&quot;Title&quot;' beta='true' back='true' logo='&quot;logo.png&quot;'&gt;
+    &lt;li&gt;
+        &lt;a href='#'&gt;Item 1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href='#'&gt;Item 2&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/div&gt;
+            </code>
+        </pre>
+    </div>
+
+    <script src='../bower_components/jquery/dist/jquery.js'></script>
+    <script src='../bower_components/angular/angular.js'></script>
+    <script src='../bower_components/bootstrap/dist/js/bootstrap.js'></script>
+    <script src='../dist/mw.angular-header-bar.js'></script>
+    <script src='../dist/templates.js'></script>
+    <script>
+        angular.module('app', ['mw.angular-header-bar']);
+    </script>
+</body>
+</html>
