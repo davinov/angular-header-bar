@@ -1,5 +1,5 @@
 nav(role='navigation', ng-controller="headerController")
-  .container
+  div(class='container{{ fluid ? "-fluid" : "" }}')
     .navbar-header
       button.navbar-toggle#app-menu-toggle(type='button', data-toggle='collapse', data-target='#app-menu-collapsable')
         span.sr-only Toggle navigation

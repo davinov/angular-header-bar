@@ -21,7 +21,8 @@ angular.module('mw.angular-header-bar').directive('headerBar', function() {
       version: '=',
       back: '=',
       homePage: '=',
-      logo: '='
+      logo: '=',
+      fluid: '='
     }
   };
 });
