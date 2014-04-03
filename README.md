@@ -14,7 +14,7 @@ This directive can be used as class, attribute or element.
 <header-bar></header-bar>
 ````
 
-> The last one which is not IE8 compatible
+> The last one is not IE8 compatible
 
 ### Usage with less
 Import `dist/less/angular-header-bar.less` in your less main file.
