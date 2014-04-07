@@ -15,9 +15,9 @@ module.exports = (config) ->
     ]
     autoWatch: true
     frameworks: ['jasmine']
-    browsers: ['Chrome']
+    browsers: ['Firefox']
     plugins: [
-      'karma-chrome-launcher'
+      'karma-firefox-launcher'
       'karma-jasmine'
       'karma-coffee-preprocessor'
       'karma-ng-jade2js-preprocessor'
