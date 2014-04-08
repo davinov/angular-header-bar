@@ -2,6 +2,7 @@
 Header bar for stylish mobile-first apps
 
 [![Build Status](https://travis-ci.org/my-way/angular-header-bar.svg)](https://travis-ci.org/my-way/angular-header-bar)
+[![Coverage Status](https://coveralls.io/repos/my-way/angular-header-bar/badge.png)](https://coveralls.io/r/my-way/angular-header-bar)
 
 ## Installation
 `bower install my-way.angular-header-bar`
