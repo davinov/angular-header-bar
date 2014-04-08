@@ -1,4 +1,4 @@
-angular.module 'mw.angular-header-bar'
+angular.module('mw.angular-header-bar')
 .directive 'headerBar', ->
   restrict: 'EAC'
   controller: 'headerController'

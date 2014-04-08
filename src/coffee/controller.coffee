@@ -1,4 +1,4 @@
-angular.module 'mw.angular-header-bar'
+angular.module('mw.angular-header-bar')
 .controller 'headerController', [
   '$scope'
   '$location'

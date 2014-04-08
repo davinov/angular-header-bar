@@ -2,8 +2,9 @@ module.exports = (config) ->
   config.set
     basePath: '../'
     preprocessors:
-      '**/*.coffee': ['coffee']
-      '**/*.jade': ['ng-jade2js']
+      'src/**/*.coffee': 'coverage'
+      'test/**/*.coffee': 'coffee'
+      '**/*.jade': 'ng-jade2js'
     files: [
       'bower_components/jquery/dist/jquery.js'
       'bower_components/angular/angular.js'
@@ -21,11 +22,15 @@ module.exports = (config) ->
       'karma-jasmine'
       'karma-coffee-preprocessor'
       'karma-ng-jade2js-preprocessor'
+      'karma-coverage'
     ]
-    junitReporter:
-      outputFile: 'test_out/unit.xml'
-      suite: 'unit'
-
     ngJade2JsPreprocessor:
       stripPrefix: 'src/'
       moduleName: 'mw.angular-header-bar'
+    reporters: [
+      'progress'
+      'coverage'
+    ]
+    coverageReporter:
+      type: 'lcovonly'
+      dir: 'test/coverage'

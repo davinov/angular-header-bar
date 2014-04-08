@@ -1,6 +1,14 @@
 language: node_js
+
 node_js:
   - 0.10
+
+env:
+    - COVERALLS_REPO_TOKEN=M4t0ZBCJUkm5Wm54pUSJYdrjhcJa3GM9A
+
 before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
+
+after_success:
+    - cat "`find test/coverage/ -name '*.info'`" | ./node_modules/coveralls/bin/coveralls.js
